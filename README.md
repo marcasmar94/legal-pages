@@ -6,16 +6,18 @@ Static legal pages for apps hosted via GitHub Pages on the custom domain `legal.
 
 - `/index.html` - landing page for legal documents
 - `/styles.css` - shared styling for all pages
-- `/einbuergerungstest/privacy.html` - privacy policy for Einbürgerungstest
-- `/einbuergerungstest/support.html` - support + FAQ for Einbürgerungstest
+- `/einbuergerungstest/privacy/index.html` - privacy policy for Einbürgerungstest
+- `/einbuergerungstest/support/index.html` - support + FAQ for Einbürgerungstest
+- `/einbuergerungstest/privacy.html` - backward-compatible redirect to `/einbuergerungstest/privacy/`
+- `/einbuergerungstest/support.html` - backward-compatible redirect to `/einbuergerungstest/support/`
 - `/CNAME` - GitHub Pages custom domain configuration
 
 ## Add a new app legal section
 
 1. Create a folder at the repo root for the app slug, for example `/myapp/`.
 2. Add at minimum:
-   - `/myapp/privacy.html`
-   - `/myapp/support.html`
+   - `/myapp/privacy/index.html`
+   - `/myapp/support/index.html`
 3. Reuse `/styles.css` and keep the same top navigation pattern (`Home`, `Privacy`, `Support`).
 4. Add links/cards on `/index.html` for the new app pages.
 5. Replace TODO placeholders (owner name, support email, policy links, address if needed) before publishing.
