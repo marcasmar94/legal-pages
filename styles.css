@@ -145,6 +145,43 @@ section + section {
   text-decoration: underline;
 }
 
+.app-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+.app-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.doc-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.doc-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #f9fbff;
+}
+
+.doc-link:hover,
+.doc-link:focus-visible {
+  border-color: #aac5e4;
+  background: #eef5ff;
+  outline: none;
+}
+
 .content-panel {
   background: var(--surface);
   border: 1px solid var(--border);
