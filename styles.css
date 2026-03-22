@@ -147,39 +147,48 @@ section + section {
 
 .app-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
 }
 
 .app-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: var(--shadow);
 }
 
-.doc-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-  margin-top: 14px;
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
-.doc-link {
+.tag {
   display: inline-block;
-  text-decoration: none;
-  font-weight: 700;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px 14px;
-  background: #f9fbff;
+  margin: 0;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.25;
 }
 
-.doc-link:hover,
-.doc-link:focus-visible {
-  border-color: #aac5e4;
-  background: #eef5ff;
-  outline: none;
+.doc-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.doc-list li + li {
+  margin-top: 6px;
+}
+
+.doc-list a {
+  font-weight: 700;
 }
 
 .content-panel {
