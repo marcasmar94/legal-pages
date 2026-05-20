@@ -91,6 +91,36 @@
           >.
         </p>
 
+        <h2>Firebase services (Google)</h2>
+        <p>
+          The app uses Firebase services provided by Google, including
+          <strong>Firebase Crashlytics</strong> and
+          <strong>Firebase Remote Config</strong>. The app may also use
+          <strong>Firebase Analytics</strong> features depending on app
+          configuration.
+        </p>
+        <p>
+          <strong>Crashlytics</strong> helps diagnose app stability issues and
+          may process crash reports, stack traces, app version, device state,
+          and installation identifiers.
+        </p>
+        <p>
+          <strong>Remote Config</strong> is used to deliver runtime feature
+          flags and app configuration values and may process installation-level
+          identifiers and config fetch metadata.
+        </p>
+        <p>
+          <strong>Analytics (if enabled)</strong> may process app interaction
+          events and app/device identifiers to understand product usage and
+          improve the app experience.
+        </p>
+        <p>
+          Firebase/Google processing is subject to Google terms and privacy
+          policies:
+          <a href="https://firebase.google.com/support/privacy/">Firebase Privacy and Security</a>,
+          <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+        </p>
+
         <h2>In-app purchase</h2>
         <p>
           The app offers a one-time in-app purchase,
@@ -110,6 +140,10 @@
             <strong>Google AdMob</strong> for ads in the free version.
           </li>
           <li>
+            <strong>Firebase (Google)</strong> for Crashlytics, Remote Config,
+            and (where enabled) Analytics-related functionality.
+          </li>
+          <li>
             <strong>Apple App Store / Google Play billing</strong> for
             processing the one-time purchase <code>remove_ads_lifetime</code>
             and purchase restoration via store-managed receipts.
@@ -119,6 +153,7 @@
           Third-party providers process data under their own terms and privacy
           policies:
           <a href="https://www.apple.com/legal/privacy/en-ww/">Apple Privacy Policy</a>,
+          <a href="https://firebase.google.com/support/privacy/">Firebase Privacy and Security</a>,
           <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
         </p>
         <p>
@@ -141,9 +176,9 @@
           device-level app data controls where available.
         </p>
         <p>
-          Data processed by third-party services (for example ad delivery or
-          purchase records) is handled under those providers' retention rules
-          and policies.
+          Data processed by third-party services (for example ad delivery,
+          crash reporting, remote configuration, analytics, or purchase records)
+          is handled under those providers' retention rules and policies.
         </p>
 
         <h2>Your rights and requests</h2>
@@ -167,7 +202,7 @@
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>Last updated: March 22, 2026</p>
+        <p>Last updated: May 20, 2026</p>
         <p>Contact: marc.asmar.de@gmail.com</p>
       </div>
     </footer>
