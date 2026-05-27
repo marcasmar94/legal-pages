@@ -65,54 +65,38 @@
           </li>
         </ul>
 
-        <h2>Ads (Google AdMob)</h2>
+        <h2>Ads and tracking (Google AdMob)</h2>
         <p>
-          The app uses Google AdMob to display ads in the free experience. Ad
-          partners and ad networks may collect device and usage data according
-          to their own privacy policies.
+          The app uses Google AdMob to display ads in the free experience.
+          AdMob and its partners may process data for ad delivery, ad
+          measurement, and third-party advertising.
         </p>
         <p>
-          Based on current SDK behavior and store disclosures, ad-related
-          processing may include: coarse location (for example IP-based
-          approximate location), device identifiers, product interaction data,
-          advertising data, crash data, and performance data.
+          This may include processing that qualifies as <strong>tracking</strong>
+          under Apple App Store definitions (for example, linking app data with
+          third-party data for advertising or advertising measurement).
         </p>
         <p>
-          These data types may be processed by third-party ad partners for
-          third-party advertising and ad measurement, may be linked to a device
-          or user profile, and may be used for tracking as defined by Apple App
-          Store privacy labels.
-        </p>
-        <p>
-          Ad-related privacy information:
-          <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
-          <a href="https://policies.google.com/technologies/partner-sites"
-            >How Google uses information from sites or apps that use Google services</a
-          >.
+          On iOS, where required, tracking permission is requested through Apple
+          AppTrackingTransparency (ATT). If permission is denied, personalized
+          ad tracking may be limited.
         </p>
 
         <h2>Firebase services (Google)</h2>
         <p>
-          The app uses Firebase services provided by Google, including
-          <strong>Firebase Crashlytics</strong> and
-          <strong>Firebase Remote Config</strong>. The app may also use
-          <strong>Firebase Analytics</strong> features depending on app
-          configuration.
+          The app uses Firebase services provided by Google, specifically
+          <strong>Firebase Remote Config</strong> (feature flags/runtime
+          configuration) and <strong>Firebase Crashlytics</strong> (crash and
+          stability diagnostics).
         </p>
         <p>
-          <strong>Crashlytics</strong> helps diagnose app stability issues and
-          may process crash reports, stack traces, app version, device state,
-          and installation identifiers.
+          <strong>Remote Config</strong> may process installation-level
+          identifiers and fetch metadata to deliver app configuration values.
         </p>
         <p>
-          <strong>Remote Config</strong> is used to deliver runtime feature
-          flags and app configuration values and may process installation-level
-          identifiers and config fetch metadata.
-        </p>
-        <p>
-          <strong>Analytics (if enabled)</strong> may process app interaction
-          events and app/device identifiers to understand product usage and
-          improve the app experience.
+          <strong>Crashlytics</strong> may process crash data, stack traces, app
+          version, device state, performance signals, and installation
+          identifiers to diagnose and fix app issues.
         </p>
         <p>
           Firebase/Google processing is subject to Google terms and privacy
@@ -133,15 +117,31 @@
           receipts for purchase validation and restoration.
         </p>
 
+        <h2>App Store data categories (summary)</h2>
+        <p>
+          Based on integrated SDK behavior, app-store privacy disclosures may
+          include these categories:
+        </p>
+        <ul class="list">
+          <li><strong>Location:</strong> Coarse Location</li>
+          <li><strong>Identifiers:</strong> Device ID</li>
+          <li><strong>Usage Data:</strong> Product Interaction, Advertising Data</li>
+          <li><strong>Diagnostics:</strong> Crash Data, Performance Data</li>
+        </ul>
+        <p>
+          These data may be used by third-party partners for purposes such as
+          third-party advertising, analytics, app functionality, and fraud or
+          abuse prevention, and may in some cases be linked to device/profile
+          identifiers.
+        </p>
+
         <h2>Third-party services</h2>
         <p>The app currently uses the following third-party services:</p>
         <ul class="list">
+          <li><strong>Google AdMob</strong> for ads in the free version.</li>
           <li>
-            <strong>Google AdMob</strong> for ads in the free version.
-          </li>
-          <li>
-            <strong>Firebase (Google)</strong> for Crashlytics, Remote Config,
-            and (where enabled) Analytics-related functionality.
+            <strong>Firebase (Google)</strong> for Remote Config (feature flags)
+            and Crashlytics (crash/stability diagnostics).
           </li>
           <li>
             <strong>Apple App Store / Google Play billing</strong> for
@@ -155,11 +155,6 @@
           <a href="https://www.apple.com/legal/privacy/en-ww/">Apple Privacy Policy</a>,
           <a href="https://firebase.google.com/support/privacy/">Firebase Privacy and Security</a>,
           <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
-        </p>
-        <p>
-          App Store Connect privacy labels and Google Play Data safety
-          disclosures are based on this third-party SDK behavior and are updated
-          when integrations change.
         </p>
 
         <h2>No account requirement</h2>
@@ -177,8 +172,21 @@
         </p>
         <p>
           Data processed by third-party services (for example ad delivery,
-          crash reporting, remote configuration, analytics, or purchase records)
-          is handled under those providers' retention rules and policies.
+          tracking, crash reporting, feature flag/config delivery, or purchase
+          records) is handled under those providers' retention rules and
+          policies.
+        </p>
+
+        <h2>Your privacy choices</h2>
+        <p>
+          You can limit ad-related tracking on iOS using system privacy
+          settings, and manage app permissions at device level.
+        </p>
+        <p>
+          For data processed by third-party providers, please use their privacy
+          controls and request channels:
+          <a href="https://policies.google.com/privacy">Google</a>,
+          <a href="https://www.apple.com/legal/privacy/en-ww/">Apple</a>.
         </p>
 
         <h2>Your rights and requests</h2>
@@ -202,7 +210,7 @@
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>Last updated: May 20, 2026</p>
+        <p>Last updated: May 27, 2026</p>
         <p>Contact: marc.asmar.de@gmail.com</p>
       </div>
     </footer>
